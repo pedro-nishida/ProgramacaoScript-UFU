@@ -58,7 +58,9 @@ def simetrica(rel, conj):
 
 def main():
     cartesiano = cartesian_product([1,2])
-    print(f"Produto Cartesiano: {cartesiano} \nPartes: {subset(cartesiano)}")
+    print(f"Produto Cartesiano: {cartesiano}\nPartes:")
+    for partes in subset(cartesiano):
+        print(f"{partes} classificado em {classifica(partes)}")
 
 if __name__ == "__main__":
     main()
